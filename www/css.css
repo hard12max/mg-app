@@ -1,0 +1,47 @@
+#googleMap
+{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+}
+.bt{
+/*    height: 60px;*/
+    min-height: 80px;
+/*  padding: 20%;*/
+}
+.pad{
+   padding: 10px;
+}
+.ico
+{
+    float: left;
+    margin-left: 0px;
+    border:2px solid black;
+
+border-radius:15px;
+}
+.but
+{
+    float: left;
+    margin-left: 20px;
+    font-size: 22px;
+}
+.panier
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-width: 150px;
+    min-height:70px;
+    border-radius: 5px;
+    font-size: 26px;
+    padding-top: 25px;
+    padding-left: 15px;
+    float: right;
+    box-shadow: 0 0 15px #d1d1d1;
+}
+.cor
+{
+    border: 1px solid;
+    border-radius: 5px;
+}

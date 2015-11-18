@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="google-api.js"></script>
+<script src="script.js"></script>
+<link href="css.css" rel="stylesheet">
+</head>
+<body>
+
+        <div data-role="page" id="p1" style="height: 100%;">
+          <div data-role="header" data-theme="b">
+            <h1>MG  app</h1>
+                    <div data-role="navbar">
+                        <ul>
+                          <li><a href="#p1">Home</a></li>
+                          <li><a href="#p2" data-transition="flip">next</a></li>
+                        </ul>
+                      </div>
+          </div>
+           <div data-role="main" class="ui-content">
+<!--
+        
+            <input type="submit" class="ui-btn ui-icon-search ui-btn-icon-left" data-theme="b" value="Recherche" >
+-->
+         <div class="ui-grid-a">
+<!--             <div class="ui-block-a pad">-->
+                 <a class="ui-btn bt"  href="#p2" data-transition="flip" >
+                     <img class="ico" src="img/product.png" width="80px" height="80px"><p class="but">Produit</p> </a>
+                 <a class="ui-btn bt"  href="#p3" data-transition="flip" >
+                 <img class="ico" src="img/reclam.png" width="80px" height="80px"><p class="but">Reclamation</p>
+                     </a>
+                 <a class="ui-btn bt"  href="#p4" data-transition="flip" >
+                 <img class="ico" src="img/loc.png" width="80px" height="80px"><p class="but">Géolocalisation</p>
+                      </a>
+                 <a class="ui-btn bt" href="#p5"  data-transition="flip" >
+                 <img class="ico" src="img/promotion.png" height="80px"><p class="but">Promotion</p>
+                  </a>
+                 <a class="ui-btn bt" href="#p6"  data-transition="flip" >
+                     <img class="ico" src="img/fid.png" height="80px"><p class="but">Carte de fideliteé </p>
+                  </a> 
+                 <a class="ui-btn bt" href="#p7"  data-transition="flip" >
+                 <img class="ico" src="img/shop.png" width="80px" height="80px"><p class="but">Panier</p>
+                     </a>
+<!--
+             </div>
+             <div class="ui-block-b pad">
+                 <a class="ui-btn bt" href="#p5" data-transition="flip" >promotion </a>
+                 <a class="ui-btn bt" href="#p6" data-transition="flip" >carte fid </a>
+                 <a class="ui-btn bt" href="#p7" data-transition="flip">panier</a>
+             </div>
+-->
+        </div>
+          </div>
+        </div> 
+
+        
+         <div data-role="page" id="p2">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage2</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content">
+            <p>product</p>
+            
+               <input id="br1" type="text" placeholder="barre code" readonly>
+               <a href="#" class="ui-btn" id="scan">SCAN</a>
+               <div id="result"></div>
+               
+          </div>
+        </div>
+        
+    <div data-role="page" id="p3">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage3</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content">
+            <h1>reclamation</h1>
+                     <div class="ui-field-contain">
+                        <label for="fullname">SUJET:</label>
+                        <input type="text" name="fullname" id="fullname"><br><br><br>
+
+                        <label for="MES">Date of Birth:</label>
+                       <textarea id="MES"  placeholder="votre message ici..."></textarea>
+                      </div>
+               
+          </div>
+        </div>
+        <div data-role="page" id="p4">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage4</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content" id="googleMap">
+            <p>géolocalisation</p>
+            
+               
+          </div>
+        </div>
+        
+    <div data-role="page" id="p5">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage5</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content">
+            <p>promotion</p>
+          </div>
+        </div>
+        
+    <div data-role="page" id="p6">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage6</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content">
+            <p>carte fid</p>
+            <a href="#" class="ui-btn" id="scan2">SCAN carte fid</a>
+               <div id="rfid"></div>
+               
+          </div>
+        </div>
+        
+    <div data-role="page" id="p7">
+          <div data-role="header" data-theme="b">
+            <h1>Homepage7</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+          </div>
+           <div data-role="main" class="ui-content">
+            <p class="panier">panier</p>
+          </div>
+        </div>
+        
+        
+<!--
+        <div data-role="page" id="p2">
+          <div data-role="header" data-theme="b">
+            <h1>Welcome To My Homepage2</h1>
+            <a href="#p1"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+            <div data-role="navbar">
+                        <ul>
+                          <li><a href="#p1" data-transition="flip">Home</a></li>
+                          <li><a href="#p3" data-transition="flip">Next</a></li>
+                        </ul>
+                      </div>
+          </div>
+           <div data-role="main" class="ui-content">
+
+          </div>
+
+        </div> 
+        <div data-role="page" id="p3">
+          <div data-role="header" data-theme="b">
+            <h1>Welcome To My Homepage3</h1>
+            <a href="#p2"  data-transition="flip" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow" ></a>
+            <div data-role="navbar">
+                        <ul>
+                          <li><a href="#p1" data-transition="flip">Home</a></li>
+                          <li><a href="#anylink" data-transition="flip">Next</a></li>
+                        </ul>
+                      </div>
+          </div>
+           <div data-role="main" class="ui-content">
+<div id="googleMap" ></div>
+          </div>
+        </div>
+-->
+
+</body>
+</html>
